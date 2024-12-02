@@ -55,3 +55,4 @@ class InscriptionModel
         return false; 
     }
 }
+?>

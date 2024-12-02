@@ -17,7 +17,7 @@
       <h1>E-cig Store</h1>
       <nav>
         <a href="/ServeurWeb/crepe_waou/public//home">Accueil</a>
-        <a href="/ServeurWeb/crepe_waou/public/catalogue">Catalogue</a>
+        <a href="/ServeurWeb/crepe_waou/public/catalogue.php">Catalogue</a>
         <a href="/ServeurWeb/crepe_waou/public/produit">Nos Produits</a>
         <a href="/ServeurWeb/crepe_waou/public/panier">Panier</a>
       </nav>

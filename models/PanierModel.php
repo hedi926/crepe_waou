@@ -55,3 +55,5 @@ class PanierModel
         return $stmt->execute();
     }
 }
+
+?>
