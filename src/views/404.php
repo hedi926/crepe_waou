@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>404 - Page Not Found</h1>
-    <a href="./">Back to Home</a>
+    <a href="/">Retour à l'accueil</a>
 </body>
 </html>

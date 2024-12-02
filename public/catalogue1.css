@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .container {
+    padding: 3rem 0;
+  }
+  
+  .catalogue {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .produit {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .produit img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .produit h2 {
+    margin: 15px 0;
+    font-size: 1.25rem;
+  }
+  
+  .produit p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .btn-catalogue {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-catalogue:hover {
+    background-color: #0056b3;
+  }
+  
+  .produit-panier {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .produit-panier button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .produit-panier button:hover {
+    background-color: #c82333;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .d-grid {
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
