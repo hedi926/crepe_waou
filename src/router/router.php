@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../controllers/MainController.php';  
+require '/../controllers/MainController.php';  
 
 $router = new AltoRouter();
 

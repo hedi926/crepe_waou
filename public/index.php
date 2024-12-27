@@ -1,13 +1,8 @@
 <?php
 
 require_once __DIR__ . '/../src/router/router.php';  
-require_once __DIR__ . '/../src/controllers/MainController.php';  
-require_once __DIR__ . '/../src/controllers/ConnexionController.php';
-require_once __DIR__ . '/../src/controllers/InscriptionController.php';
-require_once __DIR__ . '/../src/controllers/ProduitController.php';
-require_once __DIR__ . '/../src/controllers/PanierController.php';
 
-$router = require_once __DIR__ . '/ServeurWeb/PROJET-SERVEURWEB-HEDI/router/router.php';
+$router = require_once __DIR__ . '/ServeurWeb/Projet-ServeurWeb-Hedi/router/router.php';
 
 $match = $router->match();
 

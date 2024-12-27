@@ -1,13 +1,13 @@
 <?php
 
-class ProduitModel
+class ProduitModel extends CoreModel
 {
     private $db;
 
     public function __construct()
     {
         
-        $this->db = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
+        $this->db = new PDO('mysql:host=localhost;dbname=ecig', 'root', '');
     }
 
     public function getAllProduits()

@@ -1,6 +1,6 @@
 <?php
 
-class PanierModel
+class PanierModel extends CoreModel
 {
     
     private $db;

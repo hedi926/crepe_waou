@@ -1,6 +1,6 @@
 <?php
 
-class InscriptionModel
+class  InscriptionModel extends CoreModels
 {
     
     private $db;

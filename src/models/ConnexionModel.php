@@ -1,6 +1,6 @@
 <?php
 
-class ConnexionModel
+class ConnexionModel extends CoreModel
 {
  
     public function verifierUtilisateur($email, $password)
