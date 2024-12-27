@@ -5,7 +5,7 @@
 /**
  * Classe qui va nous permettre de nous connecter à notre base de données = oshop
  */
-namespace App\Utils;
+namespace src\utils;
 
 use PDO;
 
