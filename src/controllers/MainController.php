@@ -1,27 +1,70 @@
 <?php
 
-class MainController
+namespace App\Controllers;
+
+use App\Models\Brand;
+use App\Models\Category;
+use App\Models\Product;
+use App\Models\Type;
+
+use App\Utils\Database;
+use PDO;
+
+class MainController extends CoreController
 {
+
+    public function test()
+    {
+        $brandModel = new Brand(); // peut modifier Brand avec les autres nom de model pour tester
+        $list = $brandModel->findAll();
+        $elem = $brandModel->find(7);
+        dump($list);
+        dump($elem);
+    }
+    /**
+     * Affiche la page d'accueil du site
+     */
     public function home()
     {
-        $this->render('home');  
+        // Ci dessous je créer une instance du model Category
+        $categoryModel = new Category();
+        // Ci dessous je créer une instance du model Brand
+        $brandModel = new Brand();
+        // Ci dessous je créer une instance du model ProductTypes
+        $typeModel = new Type();
+        // Ensuite j'execute la fonction findAllForHomePage() du model Category
+        $categories = $categoryModel->findAllForHomePage();
+        // dump($categories);
+        // Ensuite j'execute la fonction findAllForHomePage() du model Brand
+        $brands = $brandModel->findAll();
+        // Ensuite j'execute la fonction findAllForHomePage() du model ProductTypes
+        $types = $typeModel->findAll();
+        $this->show('home', [
+            'categories' => $categories,
+            'brands' => $brands,
+            'types' => $types
+        ]);
     }
 
-    private function render($view, $data = [])
+    /**
+     * Show legal mentions page
+     */
+    public function legalMentions()
     {
-        extract($data);
-        $viewFile = __DIR__ . '/../views/' . $view . '.php';
-        if (file_exists($viewFile)) {
-            require_once $viewFile;
-        } else {
-            echo "Vue introuvable: $view";
-        }
+        // Affiche la vue dans le dossier views
+        $this->show('mentions');
     }
-
-    public function notFound()
+    public function productList()
     {
-        http_response_code(404);
-        echo "404 - Page Not Found!";
+        // Ici on créer une instance de la classe Product (donc le model Product)
+        $productModel = new Product();
+        // Ici on stocke la liste de tous les produits grâce à notre méthode findAll()
+        $products = $productModel->findAll();
+        // Ici j'affiche tout simplement la liste des products grâce à dump
+        dump($products);
+        $this->show('product_list', [
+            'products' => $products
+        ]);
     }
+    
 }
-?>

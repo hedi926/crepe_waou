@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalogue</title>
-    <link rel="stylesheet" href="catalogue1.css" />
+    <link rel="stylesheet" href="../../public/css/catalogue1.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,20 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Catalogue</h1>
-      <nav>
-        <a href="/ServeurWeb/crepe_waou/public//home">Accueil</a>
-        <a href="/ServeurWeb/crepe_waou/public/catalogue.php">Catalogue</a>
-        <a href="/ServeurWeb/crepe_waou/public/produit">Nos Produits</a>
-        <a href="/ServeurWeb/crepe_waou/public/panier">Panier</a>
-      </nav>
-    </header>
+  <?php include 'header.php'; ?>
     <main>
       <div class="catalogue">
         <div class="produit">
           <img
-            src="../images/vapexpro.jpeg"
+            src="../../public/images/vapexpro.jpeg"
             alt="Cigarette électronique 1"
             style="width: 150px; height: 150px"
           />
@@ -35,7 +27,7 @@
         </div>
         <div class="produit">
           <img
-            src="../images/CloudWave3000.jpg"
+            src="../../public/images/CloudWave3000.jpg"
             alt="Cigarette électronique 2"
             style="width: 150px; height: 150px"
           />
@@ -45,7 +37,7 @@
         </div>
         <div class="produit">
           <img
-            src="../images/VaporSky Elite.jpg"
+            src="../../public/images/VaporSky Elite.jpg"
             alt="Cigarette électronique 3"
             style="width: 150px; height: 150px"
           />
@@ -56,6 +48,7 @@
       </div>
     </main>
   </body>
+  <?php include 'footer.php'; ?>
   <script>
     function ajouterAuPanier(nom, prix) {
       let panier = JSON.parse(localStorage.getItem("panier")) || [];

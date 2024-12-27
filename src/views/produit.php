@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Détail Produit</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../public/css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,17 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-      <h1>E-cig Store</h1>
-      <nav>
-      <nav>
-        <a href="/ServeurWeb/crepe_waou/public//home">Accueil</a>
-        <a href="/ServeurWeb/crepe_waou/public/catalogue.php">Catalogue</a>
-        <a href="/ServeurWeb/crepe_waou/public/produit">Nos Produits</a>
-        <a href="/ServeurWeb/crepe_waou/public/panier">Panier</a>
-      </nav>
-      </nav>
-    </header>
+
+<?php include 'header.php'; ?>
+
     <main>
       <h2>Détail de nos Produits</h2>
       <p>
@@ -56,5 +48,6 @@
       </p>
       <button>Ajouter au panier</button>
     </main>
+    <?php include 'footer.php'; ?>
 </body>
 </html>
